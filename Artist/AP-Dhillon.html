@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="artist.css">
+    <script src="artist.js"></script>
+</head>
+<body>
+    <header>
+        <div id="search-bar">
+            <img id = "search-icon" src="../image/search.png" alt="Spotify" class="logo">
+            <input type="text" id="search-input" placeholder="Search for Artists, Songs, or Podcasts">
+            <img class = "icon" id = "clickableImage" src="../image/spotify-logo-png-7074.png" onclick="refreshPage()">
+        </div>
+        <div class="Gradient-container">
+                    <img class = "ap-img"src="Artist-image/AP-Artist.png" alt="AP-Dhillon">
+                    <h1>AP Dhillon</h1>
+                    
+                    <p1><img id="icon" src="../icon/verfied.png" alt="verified">Verified Artist</p1>
+                    <p2>10,627,929 monthly listeners</p2>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <div class = "utilty-icon">
+            <img class = "play" id = clickableImage src="../icon/play-button.png" alt="Play">
+            <h2>Popular</h2>
+            <button class = "follow">Follow</button>
+        </div>
+
+        <div class = "song-list-container">
+            <div class="song-list id">
+            <!--Excuss-->
+                <div class = "song-card" onclick="playSong('../Artist/Artist-music/excuss.mp3')">
+                    <img id = "clickableImage"
+                    src="../Artist/Artist-image/excuss.jpg"
+                    alt="Clickable Image 1"
+                    data-audio="../Artist/Artist-image/excuss.jpg"
+                    style="cursor: pointer;" >
+                    <p>Excuses</p>
+                    <p1>10,24,75,898</p1>
+                    <p2>2:56</p2>
+                </div>
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('../Artist/Artist-music/spaceship.mp3')">
+                <img id = "clickableImage"
+                     src="../Artist/Artist-image/spaceship.jpg"
+                     alt="Clickable Image 1"
+                     data-audio="../Artist/Artist-music/spaceship.mp3"
+                     style="cursor: pointer;" >
+                <p>Spaceship</p>
+                <p1>24,75,898</p1>
+                <p2>2:05</p2>
+            </div>
+
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('../Artist/Artist-music/summer.mp3')">
+                <img id = "clickableImage"
+                     src="../Artist/Artist-image/summerr.jpg"
+                     alt="Clickable Image 1"
+                     data-audio="../Artist/Artist-music/summer.mp3"
+                     style="cursor: pointer;" >
+                <p>Summer High</p>
+                <p1>1,24,75,898</p1>
+                <p2>3:25</p2>
+            </div>
+
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('../Artist/Artist-music/True.mp3')">
+                <img id = "clickableImage"
+                     src="../Artist/Artist-image/true.jpg"
+                     alt="Clickable Image 1"
+                     data-audio="../Artist/Artist-music/True.mp3"
+                     style="cursor: pointer;" >
+                <p>True Stories</p>
+                <p1>18,24,75,898</p1>
+                <p2>2:01</p2>
+            </div>
+
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('../Artist/Artist-music/INSANE.mp3')">
+                <img id = "clickableImage"
+                     src="../Artist/Artist-image/INSANE.jpg"
+                     alt="Clickable Image 1"
+                     data-audio="../Artist/Artist-music/INSANE.mp3"
+                     style="cursor: pointer;" >
+                <p>INSANE</p>
+                <p1>3,24,75,898</p1>
+                <p2>3:23</p2>
+            </div>
+        </div>
+    </main>
+    <audio id="audio-player" controls style="display:none;">
+        <source id="audio-source" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

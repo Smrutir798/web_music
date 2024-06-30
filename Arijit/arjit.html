@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arijit.css">
+    <script src="arjit.js"></script>
+    <title>Arijit Singh</title>
+</head>
+<body>
+    <header>
+        <div id="search-bar">
+            <img id="search-icon" src="../image/search.png" alt="Spotify" class="logo">
+            <input type="text" id="search-input" placeholder="Search for Artists, Songs, or Podcasts">
+            <img class="icon" id="clickableImage" src="../image/spotify-logo-png-7074.png" onclick="refreshPage()">
+        </div>
+        
+        <div class="Gradient-container">
+            <img class="ap-img" src="image/arijit.jpg" alt="Arijit Singh">
+            <h1>Arijit Singh</h1>
+            <p1><img id="icon" src="../icon/verfied.png" alt="verified"> Verified Artist</p1>
+            <p2>32,627,929 monthly listeners</p2>
+        </div>
+    </header>
+
+    <main>
+        <div class="utility-icon">
+            <img class="play" id="clickableImage" src="../icon/play-button.png" alt="Play">
+            <h2>Popular</h2>
+            <button class="follow">Follow</button>
+            <div class="song-list-container">
+                <div class="song-list id">
+                    <!-- Satranga -->
+                    <div class="song-card" onclick="playSong('../Arijit/music/Satranga.mp3')">
+                        <img id="clickableImage"
+                            src="../Arijit/image/SATRANGA.jpg"
+                            alt="Satranga"
+                            style="cursor: pointer;">
+                        <p>Satranga</p>
+                        <p1>214M</p1>
+                        <p2>4:33</p2>
+                    </div>
+
+                    <!-- Deva Deva -->
+                    <div class="song-card" onclick="playSong('../Arijit/music/Deva Deva.mp3')">
+                        <img id="clickableImage"
+                            src="../Arijit/image/Deva-Deva.jpg"
+                            alt="Deva Deva"
+                            style="cursor: pointer;">
+                        <p>Deva Deva</p>
+                        <p1>134M</p1>
+                        <p2>5:52</p2>
+                    </div>
+
+                    <!-- Kesariya -->
+                    <div class="song-card" onclick="playSong('../Arijit/music/Kesariya.mp3')">
+                        <img id="clickableImage"
+                            src="../Arijit/image/Kesariya.jpg"
+                            alt="Kesariya"
+                            style="cursor: pointer;">
+                        <p>Kesariya</p>
+                        <p1>547M</p1>
+                        <p2>2:53</p2>
+                    </div>
+
+                    <!-- Sajni -->
+                    <div class="song-card" onclick="playSong('../Arijit/music/Sajni.mp3')">
+                        <img id="clickableImage"
+                            src="../Arijit/image/sajni.jpg"
+                            alt="Sajni"
+                            style="cursor: pointer;">
+                        <p>Sajni</p>
+                        <p1>51M</p1>
+                        <p2>2:26</p2>
+                    </div>
+
+                    <!-- Qaafirana -->
+                    <div class="song-card" onclick="playSong('../Arijit/music/Qaafirana.mp3')">
+                        <img id="clickableImage"
+                            src="../Arijit/image/Qaafirana.jpg"
+                            alt="Qaafirana"
+                            style="cursor: pointer;">
+                        <p>Qaafirana</p>
+                        <p1>324M</p1>
+                        <p2>6:16</p2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <audio id="audio-player" controls style="display:none;">
+        <source id="audio-source" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
