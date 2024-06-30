@@ -1,0 +1,239 @@
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+#search-bar {
+    display: flex;
+    background-color: #262626;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: auto;
+    margin: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+#search-icon {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+#search-input {
+    background-color: #262626;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.icon {
+    height: 40px;
+    width: auto;
+    float: right;
+    position: relative;
+    top: -3px;
+    mix-blend-mode: difference;
+}
+
+#clickableImage {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#clickableImage:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Gradient-container {
+    height: 290px;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #65fc90 5%, #000000 90%);
+    position: relative;
+}
+
+.Gradient-container .ap-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.Gradient-container h1 {
+    color: white;
+    font-size: 110px;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 290px;
+    text-shadow: 2px 2px 4px #2d2d2d;
+}
+
+.Gradient-container #icon {
+    position: absolute;
+    top: 165px;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+}
+
+.Gradient-container p1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    left: 340px;
+}
+
+.Gradient-container p2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 180px;
+    left: 290px;
+}
+
+.utilty-icon .play {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 11px;
+    left: 20px;
+}
+
+.utilty-icon h2 {
+    position: absolute;
+    font-size: 32px;
+    top: 420px;
+    left: 30px;
+}
+
+.utilty-icon .follow {
+    font-family: 'SF Pro Display', sans-serif;
+    width: 110px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+    border: aliceblue 3px solid;
+    border-radius: 50px;
+    position: relative;
+    left: 50px;
+    bottom: 8px;
+    transition: transform 0.2s;
+}
+
+.utilty-icon .follow:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.song-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 80px;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 10px;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.91);
+    padding: 20px;
+}
+
+.song-card {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+    background-color: #000000;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.song-card:active {
+    background-color: #000000;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.song-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.song-card p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.song-card p1 {
+    font-size: 15px;
+    margin-left: auto;
+}
+
+.song-card p2 {
+    font-size: 15px;
+    margin-left: auto;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .Gradient-container .ap-img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        top: 10px;
+        left: 0;
+    }
+    .Gradient-container h1 {
+        font-size: 50px;
+        position: relative;
+        top: 20px;
+        left: 0;
+        text-align: center;
+    }
+    .Gradient-container #icon {
+        position: relative;
+        top: 5px;
+        left: 0;
+        margin: 0 auto;
+    }
+    .Gradient-container p1, .Gradient-container p2 {
+        position: relative;
+        top: 10px;
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

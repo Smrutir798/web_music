@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yo.css">
+    <script src="yo.js"></script>
+</head>
+<body>
+    <header>
+        <div id="search-bar">
+            <img id = "search-icon" src="../image/search.png" alt="Spotify" class="logo">
+            <input type="text" id="search-input" placeholder="Search for Artists, Songs, or Podcasts">
+            <img class = "icon" id = "clickableImage" src="../image/spotify-logo-png-7074.png" onclick="refreshPage()">
+        </div>
+        <div class="Gradient-container">
+                    <img class = "ap-img" src="image/profile.jpg" alt="AP-Dhillon">
+                    <h1>Honey Singh</h1>
+                    
+                    <p1><img id="icon" src="../icon/verfied.png" alt="verified">Verified Artist</p1>
+                    <p2>2,627,929 monthly listeners</p2>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <div class = "utilty-icon">
+            <img class = "play" id = clickableImage src="../icon/play-button.png" alt="Play">
+            <h2>Popular</h2>
+            <button class = "follow">Follow</button>
+        </div>
+
+        <div class = "song-list-container">
+            <div class="song-list id">
+            
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('music/Desi Kalakaar.mp3')">
+                <img id = "clickableImage"
+                     src="image/Desi Kalakaar.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Desi Kalakaar</p>
+                <p1>211M</p1>
+                <p2>4:33</p2>
+            </div>
+
+            <div class = "song-card" onclick="playSong('music/BROWN RANG.mp3')">
+                <img id = "clickableImage"
+                     src="image/brwon rang.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Brwon Rang</p>
+                <p1>330M</p1>
+                <p2>2:59</p2>
+            </div>
+
+            <div class = "song-card" onclick="playSong('music/Blue Eyes.mp3')">
+                <img id = "clickableImage"
+                     src="image/blue eyes.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Blue Eyes</p>
+                <p1>669M</p1>
+                <p2>4:03</p2>
+            </div>
+
+            <div class = "song-card" onclick="playSong('music/Vigdiyan Heeran.mp3')">
+                <img id = "clickableImage"
+                     src="image/Vigdiyan Heeran.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Vigdiyan Heeran</p>
+                <p1>49M</p1>
+                <p2>4:00</p2>
+            </div>
+
+            <div class = "song-card" onclick="playSong('music/Kuley-Kuley.mp3')">
+                <img id = "clickableImage"
+                     src="image/Kuley-Kuley.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Kuley Kuley</p>
+                <p1>97M</p1>
+                <p2>3:30</p2>
+            </div>
+
+           
+        </div>
+    </main>
+    <audio id="audio-player" controls style="display:none;">
+        <source id="audio-source" src="" type="audio/mpeg">
+    </audio>
+</body>
+</html>

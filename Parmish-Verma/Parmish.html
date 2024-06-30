@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Parmish.css">
+    <script src="Parmish.js"></script>
+</head>
+<body>
+    <header>
+        <div id="search-bar">
+            <img id = "search-icon" src="../image/search.png" alt="Spotify" class="logo">
+            <input type="text" id="search-input" placeholder="Search for Artists, Songs, or Podcasts">
+            <img class = "icon" id = "clickableImage" src="../image/spotify-logo-png-7074.png" onclick="refreshPage()">
+        </div>
+        <div class="Gradient-container">
+                    <img class = "ap-img" src="imagex/profile.jpg" alt="AP-Dhillon">
+                    <h1>Parmish Verma</h1>
+                    <p1><img id="icon" src="../icon/verfied.png" alt="verified">Verified Artist</p1>
+                    <p2>2,627,929 monthly listeners</p2>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <div class = "utilty-icon">
+            <img class = "play" id = clickableImage src="../icon/play-button.png" alt="Play">
+            <h2>Popular</h2>
+            <button class = "follow">Follow</button>
+        </div>
+
+        <div class = "song-list-container">
+            <div class="song-list id">
+            
+            <!--Excuss-->
+            <div class = "song-card" onclick="playSong('music/Aam Jahe Munde.mp3')">
+                <img id = "clickableImage"
+                     src="imagex/Aam-Jahe-Munde.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Aam Jahe Munde</p>
+                <p1>106M</p1>
+                <p2>4:45</p2> 
+            </div>
+
+            <div class = "song-card" onclick="playSong('music/Check it Out.mp3')">
+                <img id = "clickableImage"
+                     src="imagex/Check It Out.jpg"
+                     alt="Clickable Image 1"
+                     style="cursor: pointer;" >
+                <p>Check It Out</p>
+                <p1>115M</p1>
+                <p2>3:16</p2> 
+            </div>
+
+           
+        </div>
+    </main>
+    <audio id="audio-player" controls style="display:none;">
+        <source id="audio-source" src="" type="audio/mpeg">
+    </audio>
+</body>
+</html>
