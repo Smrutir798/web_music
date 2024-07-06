@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'SF Pro Display';
@@ -6,6 +7,7 @@ body {
     font: 100;
     font-stretch: expanded;
     overflow: auto;
+    
 }
 
 #search-bar {
@@ -62,6 +64,7 @@ body {
 #Playlist-name{
     color: rgb(255, 255, 255);
     position: absolute;
+    top: 500px;
     left: 20px;
 }
 
@@ -85,7 +88,7 @@ body {
 
 #Container{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 400px;
     
 }
 
@@ -143,7 +146,7 @@ body {
 #artist-Container h1{
     color: rgb(255, 255, 255);
     position: absolute;
-    top : 390px;
+    top : 830px;
     left: 20px;
 }
 
@@ -191,7 +194,7 @@ body {
     height: 50px;
     width: 100%;
     position: absolute;
-    top : 355px;
+    top : 810px;
 }
 
 .More .click{
@@ -209,5 +212,154 @@ body {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.sliding-box {
+    background-color: #1e1d1d;
+    height: 400px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+.sliding-box h1 {
+    color: #ffffff;
+    font-family: SF PRO DISPLAY;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.pop {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.display-left {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 80px;
+    right: 120px;
+}
+
+.display-right {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    position:relative;
+    top: 80px;
+    left: 110px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .sliding-box {
+        width: 90%;
+        top: 90px;
+    }
+    .pop {
+        height: 200px;
+        width: 200px;
+        top: 80px;
+    }
+    .display-left, 
+        top: 20px;
+       
+    }
+    .container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.sliding-box {
+    background-color: #1e1d1dad;
+    height: 400px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+.sliding-box h1 {
+    color: #ffffff;
+    font-family: SF PRO DISPLAY;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.pop {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.display-left {
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 80px;
+    right: 115px;
+}
+
+.display-right {
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 80px;
+    right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .sliding-box {
+        width: 90%;
+        top: 80px;
+    }
+    .pop {
+        height: 200px;
+        width: 200px;
+        top: 90px;
+    }
+    .display-left{
+        position: relative;
+        top: 150px;
+        right:60px;
+    
+    }
+    
+    .display-right{
+        position: relative;
+        top : 150px;
+        left : 50px;
+    }
 }
 
