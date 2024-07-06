@@ -35,3 +35,33 @@ function playSong(song) {
 function refreshPage() {
     window.location.reload();
 }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+// Button controls
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+// Automatic sliding
+function autoSlide() {
+    slideIndex++;
+    showDivs(slideIndex);
+    setTimeout(autoSlide, 2000); // Change image every 3 seconds
+}
+
+// Show slides
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("pop");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+// Initialize the automatic sliding
+autoSlide();
