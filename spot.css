@@ -280,7 +280,7 @@ body {
         width: 200px;
         top: 80px;
     }
-    .display-left, 
+    .display-left{
         top: 20px;
        
     }
@@ -292,7 +292,7 @@ body {
 }
 
 .sliding-box {
-    background-color: #1e1d1dad;
+    background-color: #262626;
     height: 400px;
     max-width: 600px;
     width: 100%;
@@ -318,6 +318,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+.pop1{
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: 270px;
+}
 
 .display-left {
     height: 25px;
@@ -339,6 +345,7 @@ body {
     right: 10px;
 }
 
+
 @media screen and (max-width: 600px) {
     .sliding-box {
         width: 90%;
@@ -348,6 +355,12 @@ body {
         height: 200px;
         width: 200px;
         top: 90px;
+    }
+    .pop1{
+        text-align: center;
+        align-content: center;
+        position: relative;
+        top: 250px;
     }
     .display-left{
         position: relative;
