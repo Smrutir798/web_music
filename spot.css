@@ -269,6 +269,13 @@ body {
     left: 110px;
     
 }
+.pop1{
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: 270px;
+    
+}
 
 @media screen and (max-width: 600px) {
     .sliding-box {
