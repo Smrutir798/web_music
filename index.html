@@ -10,12 +10,23 @@
 </head>
 
 <body>
-    <header>
+    <div>
         <div id="search-bar">
             <img id="search-icon" src="image/search.png" alt="Spotify" class="logo">
             <input type="text" id="search-input" placeholder="Search for Artists, Songs, or Podcasts">
             <img class="icon" id="clickableImage" src="image/spotify-logo-png-7074.png" onclick="refreshPage()">
         </div>
+        <!------------------------------------------------------------------------------->
+        <div class="Wheater_container">
+            <div class="weather-box">
+                <h1 class = "title">Climatic Melodies</h1>
+                <div id="location">Detecting location...</div>
+                <div id="temperature">Loading temperature...</div>
+                <audio id="audioPlayer" controls ></audio>
+            </div>
+            <script src="location.js"></script>
+        </div>
+        <!------------------------------------------------------------------------------->
         <div class ='container-box'>
             <div class = "sliding-box">
                 <h1>Most Popular</h1>
@@ -29,6 +40,7 @@
                 <p class = "pop1">I wann be your<br>Arctic Monkeys</p>
                 <img class="pop" src="image/sajni.jpg" alt="No-competition">
                 <p class = "pop1">Sajni<br>Arijit Singh</p>
+                <script src="Scrolling.js"></script>
             </div>
             <button class="display-left" onclick="plusDivs(-1)"><img class="display-left" src="image/angle-left.png" alt="No-Competition"></button>
             <button class="display-right" onclick="plusDivs(+1)"><img class="display-right"src="image/angle-right.png" alt="No-Competition" ></button>
@@ -103,9 +115,9 @@
                 <!--Dakuu-->
                 <div class="song">
                     <img id="clickableImage"
-                         src="Badshah/image/dakuu.jpg"
+                         src="../Badshah/image/dakuu.jpg"
                          alt="Clickable Image 1"
-                         data-audio="Badshah/music/Daaku.mp3"
+                         data-audio="../Badshah/music/Daaku.mp3"
                          style="cursor: pointer;">
                     <p>Dakuu<br>Badshah</p>
                 </div>
@@ -113,9 +125,9 @@
                 <!-- Heartless-->
                 <div class="song">
                     <img id="clickableImage"
-                         src="Badshah/image/Heartless.jpg"
+                         src="../Badshah/image/Heartless.jpg"
                          alt="Clickable Image 1"
-                         data-audio="Badshah/music/Hless.mp3"
+                         data-audio="../Badshah/music/Hless.mp3"
                          style="cursor: pointer;">
                     <p>Heartless<br>Badshah</p>
                 </div>
@@ -123,9 +135,9 @@
                 <!--Born for Shine -->
                 <div class="song">
                     <img id="clickableImage"
-                         src="Dlijit/imagex/bone.jpg"
+                         src="../Dlijit/imagex/bone.jpg"
                          alt="Clickable Image 1"
-                         data-audio="Dlijit/music/Born-To-Shine.mp3"
+                         data-audio="../Dlijit/music/Born-To-Shine.mp3"
                          style="cursor: pointer;">
                     <p>Born To Shine<br>Diljit Dosanjh</p>
                 </div>
@@ -369,41 +381,5 @@
             </div>
         </div>
     </main>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        // Button controls
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        // Automatic sliding
-        function autoSlide() {
-            slideIndex++;
-            showDivs(slideIndex);
-            setTimeout(autoSlide, 5000); // Change image every 3 seconds
-        }
-
-        // Show slides
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("pop");
-            var y = document.getElementsByClassName("pop1");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-            }
-            for (i = 0; i < y.length; i++) {
-            y[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-            y[slideIndex-1].style.display = "block";
-        }
-        // Initialize the automatic sliding
-        autoSlide();
-    </script>
-    
 </body>
 </html>

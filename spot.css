@@ -64,7 +64,7 @@ body {
 #Playlist-name{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 500px;
+    top: 720px;
     left: 20px;
 }
 
@@ -88,7 +88,7 @@ body {
 
 #Container{
     text-align: center;
-    margin-top: 400px;
+    margin-top: 500px;
     
 }
 
@@ -146,7 +146,7 @@ body {
 #artist-Container h1{
     color: rgb(255, 255, 255);
     position: absolute;
-    top : 830px;
+    top : 1040px;
     left: 20px;
 }
 
@@ -194,7 +194,7 @@ body {
     height: 50px;
     width: 100%;
     position: absolute;
-    top : 810px;
+    top : 1010px;
 }
 
 .More .click{
@@ -219,6 +219,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100px;
+    position: relative;
+    top: 70px;
 }
 
 .sliding-box {
@@ -228,7 +230,7 @@ body {
     width: 100%;
     border-radius: 20px;
     position: absolute;
-    top: 70px;
+    top: 110px;
 }
 
 .sliding-box h1 {
@@ -255,7 +257,7 @@ body {
     border: none;
     background-color: transparent;
     position: relative;
-    top: 80px;
+    top: 130px;
     right: 120px;
 }
 
@@ -265,7 +267,7 @@ body {
     border: none;
     background-color: transparent;
     position:relative;
-    top: 80px;
+    top: 130px;
     left: 110px;
     
 }
@@ -277,6 +279,47 @@ body {
     
 }
 
+.Wheater_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+.title{
+    color: #ffffff;
+    font-family: SF PRO DISPLAY;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.weather-box {
+    background-color: #1e1d1d;
+    max-width: 600px;
+    width: 100%;
+    height: 220px ;
+    border-radius: 20px;
+
+}
+
+
+#location,#temperature{
+    color: #ffffff;
+    font-family: SF PRO DISPLAY;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+#audioPlayer{
+    position: relative;
+    top: 20px;
+    left: 25%;
+
+}
 
 @media screen and (max-width: 600px) {
     .sliding-box {
@@ -293,10 +336,55 @@ body {
        
     }
     .container-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    #Container{
+        text-align: center;
+        margin-top: 400px;
+    }
+
+    #box {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        /* Optional for smooth scrolling */
+    }
+    .More {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top : 1020px;
+    }
+    
+    .More .click{
+        font-family: SF PRO DISPLAY;
+        background-color: #000000;
+        color: #ffffff;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #ffffff;
+        border-radius: 50px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
 }
 
 .sliding-box {
@@ -351,7 +439,7 @@ body {
 @media screen and (max-width: 600px) {
     .sliding-box {
         width: 90%;
-        top: 80px;
+        top: -50px;
     }
     .pop {
         height: 200px;
@@ -366,14 +454,32 @@ body {
     }
     .display-left{
         position: relative;
-        top: 150px;
+        top: 125px;
         right:60px;
     
     }
     
     .display-right{
         position: relative;
-        top : 150px;
+        top : 125px;
         left : 50px;
     }
-}}
+    .Wheater_container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height to content */
+        top: 3px; /* Adjust top position */
+    }
+
+    .weather-box, #audioPlayer {
+        max-width: 90%; /* Use full width */
+        left: 0; /* Adjust left position for centered alignment */
+    }
+
+    #audioPlayer {
+        width: 75%; /* Adjust width of the audio player */
+        margin: 0 auto;
+        position: absolute;
+        top: 150px;
+        left: 12%; /* Center the audio player */
+    }
+}
