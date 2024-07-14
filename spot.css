@@ -384,6 +384,21 @@ body {
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
     }
+    .Feedback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        height: 42px;
+        width: 100px;
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        position: absolute;
+        top: 1350px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     
 }
 
@@ -433,6 +448,22 @@ body {
     position: relative;
     top: 80px;
     right: 10px;
+}
+
+.Feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 42px;
+    width: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 1350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 

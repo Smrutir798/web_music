@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'SF Pro Display';
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 55%;
+    height: auto;
+    background: rgba(45, 44, 44, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p1,
+p2,
+p3 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'SF PRO Display';
+    color: #ffffff;
+    align-self: flex-start;
+}
+
+.name1,
+.email1,
+.feedback1 {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: gray;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.feedback1 {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .box {
+        width: 90%;
+    }
+
+    p1,
+    p2,
+    p3 {
+        left: 20px;
+    }
+
+    .name1,
+    .email1,
+    .feedback1 {
+        width: 90%;
+        left: 20px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+    }
+}
