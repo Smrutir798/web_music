@@ -31,17 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'clear sky':
                 musicUrl = 'music/Suraj-Hua-Maddham1.mp3'; // Example music for clear sky
                 break;
-            case 'few clouds':
-                musicUrl = 'music/One-Love2.mp3'; // Example music for few clouds
-                break;
-            case 'scattered clouds':
+            case 'Clouds':
                 musicUrl = 'music/Mann_Mera3.mp3'; // Example music for scattered clouds
-                break;
-            case 'broken clouds':
-                musicUrl = 'music/sajni4.mp3'; // Example music for broken clouds
-                break;
-            case 'shower rain':
-                musicUrl = 'music/Baarish5.mp3'; // Example music for shower rain
                 break;
             case 'rain':
                 musicUrl = 'music/dildara6.mp3'; // Example music for rain
@@ -53,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 musicUrl = 'music/Snowman8.mp3'; // Example music for snow
                 break;
             case 'mist':
-                musicUrl = 'music/Ishq-Wala-Love7.mp3'; // Example music for mist
+                musicUrl = 'music/Baarish5.mp3'; // Example music for mist
                 break;
             case 'Haze':
                 musicUrl = 'music/Mann_Mera3.mp3'; // Example music for haze
