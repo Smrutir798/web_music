@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('#clickableImage');
