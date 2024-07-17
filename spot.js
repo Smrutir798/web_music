@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('#clickableImage');
     let currentAudio = null; // Store the currently playing audio
@@ -36,32 +38,28 @@ function refreshPage() {
     window.location.reload();
 }
 
-var slideIndex = 1;
-showDivs(slideIndex);
-
-// Button controls
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+function playMusic(audioSrc, imageSrc) {
+    const audioPlayer = document.getElementById('audio-player');
+    const audioSource = document.getElementById('audio-source');
+    const songImage = document.getElementById('song-image');
+    const musicPlayer = document.getElementById('music-player');
+    
+    audioSource.src = audioSrc;
+    audioPlayer.load();
+    audioPlayer.play();
+    
+    songImage.src = imageSrc;
+    musicPlayer.style.display = 'block';
 }
 
-// Automatic sliding
-function autoSlide() {
-    slideIndex++;
-    showDivs(slideIndex);
-    setTimeout(autoSlide, 2000); // Change image every 3 seconds
+function refreshPage() {
+    location.reload();
 }
 
-// Show slides
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("pop");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}
+// JavaScript to change the audio source
+document.getElementById('audio-source')
+// Then reload the audio player to apply the new source
+document.getElementById('audio-player').load();
 
-// Initialize the automatic sliding
-autoSlide();
+
+
